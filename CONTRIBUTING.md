@@ -1,8 +1,20 @@
 **Please include the full output of youtube-dl when run with `-v`**.
 
+Here is a short step-by-step guide on how to contribute to our project, please ask yourself each of these questions before filing a bug report:
+- Is the description of the issue itself sufficient?
+- Are you using the latest version?
+- Is this issue already documented?
+- Why are existing options not enough?
+- Is there enough context in your bug report?
+- Does your issue involve one problem and one problem only?
+- Is anyone going to need the feature?
+- Is your question about youtube.dl?
+This manual goes through detailed instruction on each of these questions if you are unclear on anything.
+To view instructions for developers, please scroll to the bottom this page for elaboration.
+
 The output (including the first lines) contain important debugging information. Issues without the full output are often not reproducible and therefore do not get solved in short order, if ever.
 
-Please re-read your issue once again to avoid a couple of common mistakes (you can and should use this as a checklist):
+Please re-read your issue once again to avoid a couple of common mistakes (you can and should use this as a check list):
 
 ### Is the description of the issue itself sufficient?
 
@@ -36,7 +48,7 @@ Before requesting a new feature, please have a quick peek at [the list of suppor
 
 ###  Is there enough context in your bug report?
 
-People want to solve problems, and often think they do us a favor by breaking down their larger problems (e.g. wanting to skip already downloaded files) to a specific request (e.g. requesting us to look whether the file exists before downloading the info page). However, what often happens is that they break down the problem into two steps: One simple, and one impossible (or extremely complicated one).
+People want to solve problems, and often think they do us a favour by breaking down their larger problems (e.g. wanting to skip already downloaded files) to a specific request (e.g. requesting us to look whether the file exists before downloading the info page). However, what often happens is that they break down the problem into two steps: One simple, and one impossible (or extremely complicated one).
 
 We are then presented with a very complicated request when the original problem could be solved far easier, e.g. by recording the downloaded video IDs in a separate file. To avoid this, you must include the greater context where it is non-obvious. In particular, every feature request that does not consist of adding support for a new site should contain a use case scenario that explains in what situation the missing feature would be useful.
 
@@ -62,7 +74,7 @@ To run youtube-dl as a developer, you don't need to build anything either. Simpl
 
     python -m youtube_dl
 
-To run the test, simply invoke your favorite test runner, or execute a test file directly; any of the following work:
+To run the test, simply invoke your favourite test runner, or execute a test file directly; any of the following work:
 
     python -m unittest discover
     python test/test_download.py
